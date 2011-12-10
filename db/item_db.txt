@@ -1,0 +1,2 @@
+#ID,	Name,				Label,				Type,	Price,	Sell,	Weight,	ATK,	DEF,	Range,	Mbonus,	Slot,	Gender,	Loc,	wLV,	eLV,	View,	{UseScript},				{EquipScript}									
+0,	DEFAULT,			Default,			0,	20,	10,	10,	,	,	,	,	,	2,	,	,	,	,	{},					{}										

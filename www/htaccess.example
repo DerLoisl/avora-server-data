@@ -1,0 +1,8 @@
+# Example .htaccess file for apache to enable use of the php scripts
+# You'll also want to 'mkdir -m 766 versions' so the news.php script 
+# has somewhere to write it's files. :) 
+# This is all optional.
+
+RewriteEngine on
+RewriteRule ^resources2.txt$ resources2.php
+RewriteRule ^news.txt$ news.php

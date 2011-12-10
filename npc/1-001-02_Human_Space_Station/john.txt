@@ -1,0 +1,63 @@
+//  Copyright 2011 The Avora Project Development Team
+//
+//  This file is part of The Avora Project.
+//
+//  The Avora Project is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General  Public License as published by the
+//  Free Software Foundation; either version 2 of the License, or any later
+//  version.
+//
+//  Creator(s): Der Loisl, Dark_Mage
+//  Modified: Wed, 24 Aug 2011
+//  Description: This NPC introduces the test server.
+
+1-001-02.gat,29,14,0 script John 100,{
+
+ if (getgmlevel(0) >= 40) goto L_GM;
+
+ mes "[John]";
+ mes "Welcome to the test server of The Avora Project. This server is meant to be a playground for our developers to balance all game aspects for CR1. If you notice something that please go ahead and send us a note either on the forums at http:\/\/forums.theavoraproject.org or on our bug tracker at bugs.theavoraproject.org.";
+ next;
+ mes "[John]";
+ mes "What do you want to do?";
+ menu
+  "Write a log entry.", L_Report_Player,
+  "Nothing, I'm fine.", -;
+ close;
+
+L_GM:
+
+ mes "[John]";
+ mes "Hello GM! What do you want to do?";
+ next;
+ menu
+  "Write a log entry.", L_Report_GM,
+  "Announce something.", L_Announce;
+
+L_Report_Player:
+
+ mes "Your log entry:";
+ input @playerentry$;
+ gmcommand "@l User: << " + @playerentry$ + " >>";
+ close;
+
+L_Report_GM:
+
+ mes "Your log entry:";
+ input @gmentry$;
+ gmcommand "@l GM: << " + @gmentry$ + " >>";
+ close;
+
+L_Announce:
+
+ mes "Enter your announcement:";
+ input @message$;
+ next;
+ announce @message$, 0;
+ next;
+ mes "Another one?";
+ menu
+  "Yes", L_Announce,
+  "No", -;
+ close;
+}

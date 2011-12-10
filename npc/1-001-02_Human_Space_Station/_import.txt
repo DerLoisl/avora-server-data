@@ -1,0 +1,4 @@
+map: 1-001-02.gat
+npc: npc/1-001-02_Human_Space_Station/_mobs.txt
+npc: npc/1-001-02_Human_Space_Station/_warps.txt
+npc: npc/1-001-02_Human_Space_Station/john.txt

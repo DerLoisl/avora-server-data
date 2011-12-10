@@ -1,0 +1,14 @@
+##3 Keep watching our web page:
+##3 http://www.theavoraproject.org.
+
+
+##3 The Avora Project demo online!
+##3 2011-10-12
+
+##0 We finally have a demo server up and running 
+##0 to test important aspects of the game. Also, 
+##0 This is a playground for our developers to 
+##0 prepare contents for CR1.
+
+##0 Please report bugs and suggestions and help
+##0 us to improve the game.
